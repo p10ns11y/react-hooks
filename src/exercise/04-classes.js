@@ -33,7 +33,7 @@ class Board extends React.Component {
 
   restart = () => {
     this.setState({squares: Array(9).fill(null)})
-    this.updateLocalStorage()
+    this.updateLocalStorage() // This is reduntant not needed
   }
 
   componentDidMount() {
